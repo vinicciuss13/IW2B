@@ -7,7 +7,7 @@
     <title>Bingo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
     <!-- CSS -->
     <style>
         body, html{ 
@@ -31,7 +31,7 @@ img{
     height: 50px;
 }
     </style>
-
+</body>
     <!-- Código da página (BINGO) -->
     <div>
     <table>
@@ -97,10 +97,44 @@ img{
              var cartelaG = []; //46-60
              var cartelaO = []; //60-75
 
+             function GerarArray(numInicial, quantidade){
+                 var retorno = []
+                 for (var i = 0 < quantidade; i++;)
+                 {
+                     retorno.push(numInicial)
+                     numInicial++;
+                 }
+                 return retorno
+             }
 
+             //B
 
-
+             cartelaB = GerarArray(1,15);
+             console.log("Array da coluna B")
+             console.log(cartelaB)
              
+             //I
+             cartelaI = GerarArray(16,30);
+             console.log("Array da coluna I")
+             console.log(cartelaI)
+
+             //N
+             cartelaN = GerarArray(31,45);
+             console.log("Array da coluna N")
+             console.log(cartelaN)
+
+             //G
+             cartelaG = GerarArray(45,60);
+             console.log("Array da coluna G")
+             console.log(cartelaG)
+             
+             //O
+             cartelaO = GerarArray(61,75);
+             console.log("Array da coluna O")
+             console.log(cartelaO)
+
+
+     
              function MarcarSorteado(nomeId, elemento){
                  console.log("Elemento=")
                  console.log(elemento)
