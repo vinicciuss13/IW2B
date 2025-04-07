@@ -89,6 +89,10 @@ img{
     </table>
     </div>
 
+    <button onclick=""></button>
+
+
+
          <script>
 
              var cartelaB = []; //1-15
@@ -133,14 +137,42 @@ img{
              console.log("Array da coluna O")
              console.log(cartelaO)
 
+             cartelaB = GerarArray(1,15);
+             cartelaI = GerarArray(16,30);
+             cartelaN = GerarArray(31,45);
+             cartelaG = GerarArray(46,60);
+             cartelaO = GerarArray(61,75);
 
-     
+
              function MarcarSorteado(nomeId, elemento){
                  console.log("Elemento=")
                  console.log(elemento)
                  console.log(nomeId)
                 
              }
+//-----------------------------------------------------------
+
+             function GerarCartela()
+            {
+                for(var i = 1; i <= 5; i++)
+                {
+                    var td = document.getElementById("B" + 1)
+                    td.innerText = cartelaB[i]
+
+                    var td = document.getElementById("I" + 1)
+                    td.innerText = cartelaI[i]
+
+                    var td = document.getElementById("N" + 1)
+                    td.innerText = cartelaN[i]
+
+                    var td = document.getElementById("G" + 1)
+                    td.innerText = cartelaG[i]
+
+                    var td = document.getElementById("O" + 1)
+                    td.innerText = cartelaO[i]
+                }
+            }
+            
          </script>
 
 </body>
