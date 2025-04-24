@@ -154,6 +154,13 @@ img{
 
              function GerarCartela()
             {
+                
+            cartelaB = MisturarArray(GerarArray(1,15));
+            cartelaI = MisturarArray(GerarArray(16,30));
+            cartelaN = MisturarArray(GerarArray(31,45));
+            cartelaG = MisturarArray(GerarArray(46,60));
+            cartelaO = MisturarArray(GerarArray(61,75));
+
                 for(var i = 1; i <= 5; i++)
                 {
                     var td = document.getElementById("B" + 1)
@@ -173,6 +180,29 @@ img{
                 }
             }
             
+            function NumeroAleatorio(numeroMinimo, numeroMaximo){
+                var retorno = Math.floor(Math.random() * numeroMaximo)
+                if (retorno > 0 && retorno >= numeroMinimo && retorno <= numeroMaximo){
+                    return retorno
+                } else {
+                    return NumeroAleatorio(numeroMinimo, numeroMaximo)
+                }
+            }
+
+            function MisturarArray(array){
+                var aleatorio
+                var cont = array.length
+                var auxiliar
+                while (cont != 0){
+                    aleatorio = NumeroAleatorio(1, array.length)
+                    cont--
+                    auxiliar = array[cont]
+                    array[cont] = array[aleatorio]
+                    array[aleatorio] = auxiliar
+                }
+                return array
+            }
+
          </script>
 
 </body>
