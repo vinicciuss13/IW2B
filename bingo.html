@@ -87,13 +87,15 @@ img{
             </tr>
         </tbody>
     </table>
+    
+
+    <button onclick="GerarCartela()"></button>
+
     </div>
 
-    <button onclick=""></button>
 
 
-
-         <script>
+         <script type="text/javascript">
 
              var cartelaB = []; //1-15
              var cartelaI = []; //16-30
@@ -163,17 +165,17 @@ img{
 
                 for(var i = 1; i <= 5; i++)
                 {
-                    var td = document.getElementById("B" + 1)
-                    td.innerText = cartelaB[i]
+                    var td = document.getElementById("g" + 1)
+                    td.innerText = cartelaG[i]
 
-                    var td = document.getElementById("I" + 1)
+                    var td = document.getElementById("i" + 1)
                     td.innerText = cartelaI[i]
 
-                    var td = document.getElementById("N" + 1)
-                    td.innerText = cartelaN[i]
+                    var td = document.getElementById("b" + 1)
+                    td.innerText = cartelaB[i]
 
-                    var td = document.getElementById("G" + 1)
-                    td.innerText = cartelaG[i]
+                    var td = document.getElementById("n" + 1)
+                    td.innerText = cartelaN[i]
 
                     var td = document.getElementById("O" + 1)
                     td.innerText = cartelaO[i]
