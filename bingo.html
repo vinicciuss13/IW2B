@@ -48,48 +48,48 @@ img{
             <!--Primeira linha-->
             <tr>
                 <td id="b1" onclick="MarcarSorteado(this)">3</td>
-                <td id="i1">25</td>
-                <td id="n1">42</td>
-                <td id="g1">56</td>
-                <td id="o1">73</td>
+                <td id="i1" onclick="MarcarSorteado(this)">25</td>
+                <td id="n1" onclick="MarcarSorteado(this)">42</td>
+                <td id="g1" onclick="MarcarSorteado(this)">56</td>
+                <td id="o1" onclick="MarcarSorteado(this)">73</td>
             </tr>
             <!--Segunda linha-->
             <tr>
-                <td id="b2">8</td>
-                <td id="i2">18</td>
-                <td id="n2">36</td>
-                <td id="g2">49</td>
-                <td id="o2">60</td>
+                <td id="b2" onclick="MarcarSorteado(this)">8</td>
+                <td id="i2" onclick="MarcarSorteado(this)">18</td>
+                <td id="n2" onclick="MarcarSorteado(this)">36</td>
+                <td id="g2" onclick="MarcarSorteado(this)">49</td>
+                <td id="o2" onclick="MarcarSorteado(this)">60</td>
             </tr>
             <!--Terceira linha-->
             <tr>
-                <td id="b3">15</td>
-                <td id="i3">27</td>
-                <td id="n3"><img src=assets/joker.jpg></img></td>
-                <td id="g3">50</td>
-                <td id="o3">71</td>
+                <td id="b3" onclick="MarcarSorteado(this)">15</td>
+                <td id="i3" onclick="MarcarSorteado(this)">27</td>
+                <td id="n3" ><img src=assets/joker.jpg></img></td>
+                <td id="g3" onclick="MarcarSorteado(this)">50</td>
+                <td id="o3" onclick="MarcarSorteado(this)">71</td>
             </tr>
             <!--Quarta linha-->
             <tr>
-                <td id="b4">13</td>
-                <td id="i4">19</td>
-                <td id="n4">39</td>
-                <td id="g4">57</td>
-                <td id="o4">69</td>
+                <td id="b4" onclick="MarcarSorteado(this)">13</td>
+                <td id="i4" onclick="MarcarSorteado(this)">19</td>
+                <td id="n4" onclick="MarcarSorteado(this)">39</td>
+                <td id="g4" onclick="MarcarSorteado(this)">57</td>
+                <td id="o4" onclick="MarcarSorteado(this)">69</td>
             </tr>
             /<!--Quinta linha-->
             <tr>
-                <td id="b5">9</td>
-                <td id="i5">30</td>
-                <td id="n5">40</td>
-                <td id="g5">53</td>
-                <td id="o5">73</td>
+                <td id="b5" onclick="MarcarSorteado(this)">9</td>
+                <td id="i5" onclick="MarcarSorteado(this)">30</td>
+                <td id="n5" onclick="MarcarSorteado(this)">40</td>
+                <td id="g5" onclick="MarcarSorteado(this)">53</td>
+                <td id="o5" onclick="MarcarSorteado(this)">73</td>
             </tr>
         </tbody>
     </table>
     
 
-    <button onclick="GerarCartela()"></button>
+    <button onclick="GerarCartela()"> Gerar Cartela </button>
 
     </div>
 
@@ -150,7 +150,11 @@ img{
                  console.log("Elemento=")
                  console.log(elemento)
                  console.log(nomeId)
-                
+                 elemento.style.backgroundColor = "red";
+                 if(elemento.style.backgroundColor == "red"){
+                     alert("a cor é red")
+                 }
+                else
              }
 //-----------------------------------------------------------
 
