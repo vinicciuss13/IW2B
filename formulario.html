@@ -25,6 +25,26 @@
     </form>
  
     <script>
+        function consultaAPI()
+        {
+            var cep = document.getElementById('cep')
+            var url = "https://viacep.com.br/ws/"+cep.value+"/json/"
+            fetch(url).then((Response) => response.json()).then((dados) => {
+                var endereco = document.getElementById("endereco")
+                var bairro = document.getElementById("bairro")
+                var estado = document.getElementById("estado")
+                var cidade = document.getElementById("cidade")
+
+                endereco.value = dados.logradouro
+                bairro.value = dados.bairro
+                estado.value = dados.estado
+                cidade.value = dados.localidade
+
+
+            })
+        }
+
+
         function ValidarFormulario()
         {
             var cep = document.getElementsById('cep')
