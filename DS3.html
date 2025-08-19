@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Dark Souls 3</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+    body {
+      background: #181818;
+      color: #e0c080;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.5px;
+    }
+    h1, h2 {
+      color: #ffd700;
+      text-shadow: 2px 2px 8px #000;
+      font-family: 'Cinzel', serif;
+    }
+    .navbar, .list-group-item.active {
+      background: linear-gradient(90deg, #222 60%, #444 100%);
+      border-bottom: 2px solid #ffd700;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffd700 !important;
+      font-family: 'Cinzel', serif;
+    }
+    .list-group-item {
+      background: #222;
+      color: #e0c080;
+      border: none;
+    }
+    .list-group-item-action:hover {
+      background: #333;
+      color: #ffd700;
+    }
+    .boss-img {
+      border: 2px solid #ffd700;
+      box-shadow: 0 0 16px #000;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .container, .container-fluid {
+      background: rgba(24,24,24,0.95);
+      border-radius: 12px;
+      box-shadow: 0 0 24px #000;
+    }
+    strong {
+      color: #ffd700;
+    }
+    .banner-img {
+      height: 220px;
+      object-fit: cover;
+      object-position: center 40%;
+      border-bottom: 2px solid #ffd700;
+      box-shadow: 0 4px 24px #000;
+    }
+    /* Bosses cards */
+    .boss-card h2 {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    .boss-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      border: 2px solid #ffd700;
+      margin: 8px 0;
+      object-fit: cover;
+    }
+    .boss-card .boss-desc {
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dark Souls 3</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Alternar navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+    <img
+      src="https://www.gamevicio.com/wp-content/uploads/2020/05/dark-souls-iii-bate-a-marca-de-10-milhoes-de-unidades-vendidas-009892-1.webp"
+      class="img-fluid w-100 banner-img"
+      alt="Banner Dark Souls 3"
+    />
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="list-group">
+          <div class="list-group-item active">Menu Principal</div>
+          <a href="#" class="list-group-item list-group-item-action">Sobre</a>
+          <a href="#" class="list-group-item list-group-item-action">Finais</a>
+          <a href="#" class="list-group-item list-group-item-action">Classes</a>
+          <a href="#" class="list-group-item list-group-item-action">Bosses Marcantes</a>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <h1>Dark Souls 3 - Narrativa </h1>
+        <p>
+          Em Dark Souls 3, o jogador assume o papel do Ashen One, um guerreiro amaldiçoado que precisa evitar que o mundo mergulhe na escuridão completa. 
+          A história se passa no reino de Lothric, onde os Lordes das Cinzas, antigos heróis que outrora mantinham a chama acesa, abandonaram suas responsabilidades. 
+          A missão do Ashen One é caçar esses Lordes, incluindo figuras como Aldrich, Yhorm o Gigante e os Vigias do Abismo,
+           para restaurar a chama primordial e equilibrar o ciclo de vida e morte. O jogo explora um mundo gótico e decadente, 
+           cheio de criaturas assustadoras e mistérios que devem ser desvendados através da exploração e da interpretação de itens.
+        </p>
+
+        <p>
+          Conforme o jogador avança, ele faz escolhas que influenciam o final da história, que pode resultar na restauração da chama, na queda do mundo na escuridão,
+           ou até mesmo na ascensão do jogador como o novo Senhor dos Vazios.
+           O tema central de Dark Souls 3 gira em torno do ciclo de destruição e renascimento, com luz e escuridão constantemente em conflito.
+        </p>
+
+        <h1>Finais do Jogo</h1>
+        <ul>
+          <li><strong>Restauração da Chama:</strong> O jogador reacende a Primeira Chama, mantendo o ciclo de luz e escuridão.</li>
+          <li><strong>Fim do Fogo:</strong> O jogador permite que a chama se apague, mergulhando o mundo em trevas e encerrando o ciclo.</li>
+          <li><strong>Senhor dos Vazios:</strong> O jogador usurpa a chama, tornando-se o novo Lorde das Trevas e mudando o destino do mundo.</li>
+        </ul>
+
+        <h1>Classes</h1>
+        <ul>
+          <li><strong>Cavaleiro</strong></li>
+          <li><strong>Mercenário</strong></li>
+          <li><strong>Guerreiro</strong></li>
+          <li><strong>Arauto</strong></li>
+          <li><strong>Ladrão</strong></li>
+          <li><strong>Assassino</strong></li>
+          <li><strong>Feiticeiro</strong></li>
+          <li><strong>Piromante</strong></li>
+          <li><strong>Clérigo</strong></li>
+          <li><strong>Despojado</strong></li>
+        </ul>
+
+        <h1>Bosses Mais Difíceis</h1>
+        <div class="row text-center">
+          <div class="col-md-2 col-6 mb-4 boss-card">
+            <h2>Nameless King</h2>
+            <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/03/The-Nameless-King-from-Dark-Souls-3.jpg" alt="Nameless King">
+            <div class="boss-desc">Considerado por muitos o boss mais desafiador do jogo, com ataques muito rápidos e que dão muito dano.</div>
+          </div>
+          <div class="col-md-2 col-6 mb-4 boss-card">
+            <h2>Soul of Cinder</h2>
+            <img src="https://cdna.artstation.com/p/assets/images/images/015/844/518/large/luis-sebastian-soul-of-cinder.jpg?1549896128" alt="Soul of Cinder">
+            <div class="boss-desc">Boss final, possui múltiplas fases e todos os estilos de combate do jogo.</div>
+          </div>
+          <div class="col-md-2 col-6 mb-4 boss-card">
+            <h2>Sister Friede</h2>
+            <img src="https://i.pinimg.com/originals/07/79/ff/0779ff81693a9b338beae6b135dae149.jpg" alt="Sister Friede">
+            <div class="boss-desc">Boss da DLC Ashes of Ariandel, possui três fases e exige muita atenção e paciência.</div>
+          </div>
+          <div class="col-md-2 col-6 mb-4 boss-card">
+            <h2>Darkeater Midir</h2>
+            <img src="https://images7.alphacoders.com/110/1101239.jpg" alt="Darkeater Midir">
+            <div class="boss-desc">Boss da DLC The Ringed City, enorme resistência a todos os tipos de ataques, uma barra de HP enorme e alguns ataques hitkill.</div>
+          </div>
+          <div class="col-md-2 col-6 mb-4 boss-card">
+            <h2>Slave Knight Gael</h2>
+            <img src="https://cdnb.artstation.com/p/assets/images/images/035/107/251/large/liam-manning-slave-knight-gael.jpg?1614114881" alt="Slave Knight Gael">
+            <div class="boss-desc">Boss final da DLC The Ringed City, possui ataques rápidos, múltiplas fases e grande resistência a todos os tipos de ataque.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
